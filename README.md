@@ -22,7 +22,7 @@ A simple CLI application built with TypeScript for managing your to-do tasks. Th
 
 ## Installation & Setup
 
-To get this CLI up and running on your system, follow these steps:
+To get this CLI up and running on your system, ensure you have installed `tsc` and then follow these steps:
 
 1. Clone the repository:
 
@@ -155,7 +155,7 @@ todo delete 43504dd2-4483-48d8-9a2a-09a10837cf83 --file old-tasks.json
 
 ## Development
 
-For local development, you can use the `start` command to directly execute the TypeScript code whenever you make changes (ensure you have installed `tsc`). This will run `tsc`, keeping your `dist/` directory up-to-date and you can then test your changes by running a `todo` command like:
+For local development, you can use the `start` command to directly execute the TypeScript code whenever you make changes. This will run `tsx`, executing directly your Typescript code:
 
 ```bash
 npm run start -- add four --file project-alpha.json 
