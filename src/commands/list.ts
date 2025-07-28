@@ -5,13 +5,15 @@ export const setupListCommand = (program: Command): Command => {
   return program
     .command('list')
     .description('List all to-do tasks')
-    .action(({ file }) => {
+    .option('--show-ids', 'When printing, show all labels (default hide ids)')
+    .action(({ file, showIds }) => {
         const todos = readTodos(file);
-
+        
         console.log('Your to-do List:');
         todos.forEach((todo, idx) => {
             const status = todo.completed ? '[X]' : '[ ]';
-            const taskDescription = [`${idx + 1}.`, todo.id, status, todo.task].join(' ');
+            const id = showIds ? todo.id : '';
+            const taskDescription = [`${idx + 1}.`, status, todo.task, id].join('\t');
             console.log(taskDescription)
         });
     });

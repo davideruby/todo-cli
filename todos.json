@@ -1,7 +1,17 @@
 [
   {
-    "id": "3cf6f3bc-1333-4905-8a1b-4b725de22b20",
+    "id": "43504dd2-4483-48d8-9a2a-09a10837cf83",
     "task": "one",
+    "completed": true
+  },
+  {
+    "id": "ea8b73b7-e40f-41a7-ba18-5d0df462ac41",
+    "task": "two",
+    "completed": false
+  },
+  {
+    "id": "1b9fd388-f903-4cfb-870f-bfa8d504252c",
+    "task": "three",
     "completed": false
   }
 ]

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from "commander";
-import { setupAddCommand, setupListCommand, setupDeleteCommand } from "./commands";
+import { setupAddCommand, setupListCommand, setupDeleteCommand, setupCompleteCommand } from "./commands";
 import { setupFilePathOption } from "./options";
 
 function main() {
@@ -17,6 +17,7 @@ function main() {
   setupAddCommand(program);
   setupListCommand(program);
   setupDeleteCommand(program);
+  setupCompleteCommand(program);
 
   program.parse(process.argv);
 }
